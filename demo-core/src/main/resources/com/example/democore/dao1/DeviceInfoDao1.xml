@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.democore.dao1.DeviceInfoDao1">
+    <!--
+    /**
+     * 在此扩展表对应的Dao Sql
+     */
+
+    -->
+    <select id="listAll" resultType="com.example.democore.dbo.DeviceInfoDO1">
+        select * from device_info WHERE system_id = '001'
+    </select>
+
+
+</mapper>

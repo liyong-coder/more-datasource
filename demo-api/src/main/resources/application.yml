@@ -1,0 +1,32 @@
+
+spring:
+  application:
+    name: MORE-DATASOURCE
+  datasource:
+    db1:
+      jdbc-url: jdbc:postgresql://172.16.8.138:5432/szzf-area?useSSL=true
+      username: postgres
+      password: admin@123
+      driver-class-name: org.postgresql.Driver
+
+    db2:
+      jdbc-url: jdbc:mysql://172.16.8.18:3306/tibmas2?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+      username: user
+      password: admin@1
+      driverClassName: com.mysql.jdbc.Driver
+  jackson:
+    date-format:  yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+mybatis:
+  configurationm:
+    apUnderscoreToCamelCase: true
+    jdbcTypeForNull: NULL
+server:
+  port: 9999
+  servlet:
+    context-path: /more-datasource
+connection:
+  pool:
+    initialPoolSize: 5
+    minPoolSize: 20
+    maxIdleTime: 3000
